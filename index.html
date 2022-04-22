@@ -17,6 +17,23 @@
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v13.0&appId=692269562092784&autoLogAppEvents=1" nonce="fbb7TkOd"></script>
     <div class="fb-share-button" data-href="https://chaos28.github.io/test/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchaos28.github.io%2Ftest%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Teilen</a></div>
+     <button class="btn">test button</button> 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        $(".btn").on('click', function () {
+            $('meta[property="og:title"]').attr('content', 'test');
+            $('meta[property="og:description"]').attr('content', 'Lorem ipsum dolor sit amet consectetur adipisicing elit');
+            $('meta[property="og:image"]').attr('content', 'https://greaterchange.cgify.com/wp-content/uploads/2021/07/Rectangle-420-2-1.png');
+            $('meta[property="og:url"]').attr('content', 'https://greaterchange.cgify.com/');
+
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false
+        })
+
+    </script>
+    
     </body>
 
 </html>
