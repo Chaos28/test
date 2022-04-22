@@ -21,10 +21,10 @@
     <script>
 
         $(".btn").on('click', function () {
-            // $('meta[property="og:title"]').attr('content', 'test');
-            // $('meta[property="og:description"]').attr('content', 'Lorem ipsum dolor sit amet consectetur adipisicing elit');
-            // $('meta[property="og:image"]').attr('content', 'https://greaterchange.cgify.com/wp-content/uploads/2021/07/Rectangle-420-2-1.png');
-            // $('meta[property="og:url"]').attr('content', 'https://greaterchange.cgify.com/');
+            $('meta[property="og:title"]').attr('content', 'test');
+            $('meta[property="og:description"]').attr('content', 'Lorem ipsum dolor sit amet consectetur adipisicing elit');
+            $('meta[property="og:image"]').attr('content', 'https://greaterchange.cgify.com/wp-content/uploads/2021/07/Rectangle-420-2-1.png');
+            $('meta[property="og:url"]').attr('content', 'https://greaterchange.cgify.com/');
 
             window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false
         })
